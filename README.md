@@ -8,13 +8,18 @@ The tools and sample needed to learn the Kubernetes.
   - [vagrant virtualbox provider](vagrant/vbox-environment)
 
 
-- [Kubernetes Setup:](setup)  
+- [Kubernetes Setup:](setup)
   - [kind config files](setup/kind/kind.md)
   - [kind ingress config](setup/kind/kind-ingress.yml)
   - [kind port mapping config](setup/kind/kind-port-mapping.yml)
-  - [kind multinode custom config](setup/kind/multinode-custom-version.yml)
-  - [kubernetes multi-node installation](setup/kubeadm/multi-node-installation.md)
+  - [kind multi-node custom config](setup/kind/multinode-custom-version.yml)
+  - [kubernetes multi-node installation docker](setup/kubeadm/multi-node-installation-docker.md)
+  - [kubeadm config docker cri](setup/kubeadm/kubeadm-config-docker.yml)
   - [kubernetes multi-node update](setup/kubeadm/multi-node-update.md)
+  - [kubernetes multi-node installation containerd](setup/kubeadm/multi-node-installation-containerd.md)
+  - [kubeadm config containerd cri](setup/kubeadm/kubeadm-config-containerd.yml)
+  - [RKE kubernetes cluster setup](setup/RKE/rke.md)
+  - [RKE kubernetes cluster config](setup/RKE/cluster.yml)
 
 
 - [Kubernetes Tools:](tools)
@@ -47,8 +52,14 @@ The tools and sample needed to learn the Kubernetes.
   - [kubeapps](scenario/kubeapps.md)
   - [kubernetes backup|restore with velero](scenario/velero.md)
   - [Cassandra with StatefulSets on Kubernetes](https://github.com/kubernetes/examples/tree/master/cassandra)
-  
+  - [Create reader user on cluster](scenario/Create-read-only-user-on-cluster.md)
+  - [Create reader user on namespace](scenario/Create-read-only-user.md)
+  - [Network policy sample](scenario/network-policy.md)
+  - [Kubernetes Demo Project](scenario/kubernetes-demo-project.md)
 
+- [Kubernetes Components:](components)
+  - [etcd resource check](components/etcd-resource-check.md)
+  - [api server audit log](components/api-server-audit-log.md)
 
 - [Kubernetes Manifests:](manifests)
   - [daemonset](manifests/daemonset)
@@ -64,20 +75,31 @@ The tools and sample needed to learn the Kubernetes.
 
 
 - [Others:](others)
-  - [Phippy and friends:](others/Phippy_and_friends)
+  - [Phippy and friends](others/Phippy_and_friends)
+  - [Kubernetes up & running](others/eBooks/kubernetes-up-running.pdf)
+  - [Kubernetes in action](others/eBooks/Kubernetes_in_Action.pdf)
 
 
 # In Progress Task:
-- etcdadm: https://github.com/kubernetes-sigs/etcdadm
-- minikube
-- k3s
-- private-registry harbor
-- pdf and ebook
-- other resource
-- HPA
-- kubespray
-
-
+- [ ] Installations:
+  - [ ] [etcdadm](https://github.com/kubernetes-sigs/etcdadm)
+  - [ ] minikube
+  - [ ] k3d
+  - [ ] kubespray
+  - [x] multi-node new version and with containerd
+  - [x] rancher kubernetes engine (RKE)
+- [ ] Kubernetes add-ons:
+  - [ ] Ingress: nginx
+  - [ ] Certificate management: cert-manager
+  - [ ] Private registry: harbor
+  - [ ] Monitoring: kube-prometheus-stack
+  - [ ] Logging: loki stack
+  - [ ] Metric Server: kube-metric-server
+- [x] pdf and ebook
+- [x] HPA
+- [x] reader user on cluster
+- [x] reader user on namespace
+- [x] security manifest
 
 # Reference:
  - https://kubernetes.io
@@ -86,7 +108,7 @@ The tools and sample needed to learn the Kubernetes.
  - https://github.com/ondrejsika/kubernetes-training
  - https://blog.container-solutions.com/kubernetes-deployment-strategies
  - https://github.com/ContainerSolutions/k8s-deployment-strategies
- - 
+ - https://ranchermanager.docs.rancher.com
 
 
 # 🔗 Links
